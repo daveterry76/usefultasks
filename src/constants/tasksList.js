@@ -1,14 +1,18 @@
+import { v4 as uuid } from 'uuid';
+
+
+
 export const tasksList = [
     {
-        id: 1,
+        id: uuid(),
         task: "Review code on Github"
     },
     {
-        id: 2,
+        id: uuid(),
         task: "Brainstorming session with team"
     },
     {
-        id: 3,
+        id: uuid(),
         task: "Read daily tech newsletters"
     }
 ]

@@ -10,12 +10,18 @@ const useSignUp = () => {
 
     const signUp = async () => {
         try {
+            const config = {
+                headers: {
+                    'Access-Control-Allow-Origin': '*'
+                }
+            };
+
             const res = await axios.post(`${baseUrl}/api/authaccount/registration`, {
                 name,
                 email,
                 password
-            });
-            const { data } = res.data;
+            }, config);
+            const data = res.data;
             console.log(data, name);
         } catch (error) {
             console.log(error)

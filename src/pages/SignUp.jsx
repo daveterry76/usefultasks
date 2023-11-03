@@ -3,8 +3,14 @@ import Logo from '../components/Logo'
 import SignUpBtn from '../components/SignUp/SignUpBtn'
 import SignUpForm from '../components/SignUp/SignUpForm'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const SignUp = () => {
+
+  useEffect(() => {
+    document.title = 'Sign Up'
+  })
+
   return (
     <>
         <Logo />

@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../components/Logo'
+import { useEffect } from 'react'
 
 const Success = () => {
+  useEffect(() => {
+    document.title = 'Sign Up'
+  })
+
   return (
     <>
         <Logo />
